@@ -1,0 +1,97 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.tekntime.retailer.reward</groupId>
+  <artifactId>com.tekntime.retailer.reward</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+    <parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.8.RELEASE</version>
+	</parent>
+  
+  <properties>
+		<java-version>1.8</java-version>
+		<javax.servlet.jsp-api.version>2.3.2-b01</javax.servlet.jsp-api.version>
+        <javax.el.version>2.2</javax.el.version>
+		<jstl.version>1.2</jstl.version>
+        <logstash-logback-encoder.version>4.8</logstash-logback-encoder.version>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+	
+
+		<!-- Servlet -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+        
+
+	
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>        
+
+		<dependency>
+			<groupId>net.logstash.logback</groupId>
+			<artifactId>logstash-logback-encoder</artifactId>
+			<version>${logstash-logback-encoder.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+	      	<groupId>org.projectlombok</groupId>
+	      	<artifactId>lombok</artifactId>
+	      	<version>1.18.16</version>
+	     </dependency>
+  
+		 <dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+		
+
+    <dependency>
+	    <groupId>com.fasterxml.jackson.core</groupId>
+	    <artifactId>jackson-core</artifactId>
+	    <version>2.10.1</version>
+	</dependency>
+    <dependency>
+	    <groupId>com.fasterxml.jackson.dataformat</groupId>
+	    <artifactId>jackson-dataformat-xml</artifactId>
+	    <version>2.10.1</version>
+	</dependency>
+
+	<dependency>  
+	    <groupId>org.json</groupId>  
+	    <artifactId>json</artifactId>  
+	    <version>20230618</version>  
+	</dependency> 
+	
+	<dependency>
+		<groupId>ca.uhn.hapi</groupId>
+		<artifactId>hapi-structures-v24</artifactId>
+		<version>2.2</version>
+     </dependency> 
+ </dependencies>
+  
+</project>
