@@ -18,7 +18,7 @@ public class TotalReward {
 	private double totalPoint;
 	
 	public void point() {
-		totalPoint =rewards.stream().mapToDouble(Reward::getPoint).sum();
+		totalPoint =rewards.stream().mapToDouble(Reward::getMonthlyPoint).sum();
 	}
 }
 

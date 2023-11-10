@@ -24,19 +24,18 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-<<<<<<< HEAD
 	
-=======
->>>>>>> 0d903f3a42d619d8cd6eaba5d808b823e937bb48
 		<dependency>
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-<<<<<<< HEAD
 		
-=======
-
->>>>>>> 0d903f3a42d619d8cd6eaba5d808b823e937bb48
+		<dependency>
+		    <groupId>com.opencsv</groupId>
+		    <artifactId>opencsv</artifactId>
+		    <version>5.8</version>
+		</dependency>
+		
 		<!-- Servlet -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -98,10 +97,6 @@
 	    <version>20230618</version>  
 	</dependency> 
 	
-<<<<<<< HEAD
-=======
-
->>>>>>> 0d903f3a42d619d8cd6eaba5d808b823e937bb48
  </dependencies>
   
 </project>

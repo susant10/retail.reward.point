@@ -15,12 +15,12 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Reward { 
 	private String monthYear;
-	private List<Transcation> transactions;
-	private double point;
+	private List<Transaction> transactions;
+	private double monthlyPoint;
 
 	
 	public void calculate() {
-		point =transactions.stream().mapToDouble(Transcation::point).sum();
+		monthlyPoint =transactions.stream().mapToDouble(Transaction::point).sum();
 	}
 	
 }
