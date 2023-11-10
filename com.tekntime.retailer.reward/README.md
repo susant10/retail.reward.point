@@ -14,9 +14,11 @@ API doesn't take any argument. All these customer transactions are hard coded.
 
 To add and remove please see the mockxx methods in RewardCalculatingService inside package com.tekntime.retailer.reward.service.
 
+
+
 API response will look like as shown below.
 point is monthly point.
-totalPoint is total point.
+totalPoint is sum of monthly points.
 
 <TotalReward>
 <rewards>
@@ -36,3 +38,10 @@ totalPoint is total point.
 
 <totalPoint>260.0</totalPoint>
 </TotalReward>
+==========================
+
+
+API Health check - Actuator is enabled for health check.
+
+URL for health check :  http://localhost:8080/actuator/health
+Responese : {"status":"UP"}
